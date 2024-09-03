@@ -32,7 +32,18 @@ class Singleton{
 };
 Singleton* Singleton::m_pInstance = nullptr; //since m_pInstance as a static so we have to initialize outside the class
 int main () {
+	//you can try with these things it will create only one instance but here we are creationg so many instances
 	Singleton::create_instance();
+	Singleton::create_instance();
+	Singleton::create_instance();
+	Singleton::create_instance();
+	Singleton::create_instance();
+	Singleton::create_instance();
+	Singleton::destroy();
+	Singleton::destroy();
+	Singleton::destroy();
+	Singleton::destroy();
+	Singleton::destroy();
 	Singleton::destroy();
 	return 0;
 }
