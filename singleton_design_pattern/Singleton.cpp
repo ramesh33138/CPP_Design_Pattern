@@ -30,7 +30,7 @@ class Singleton{
 
 
 };
-Singleton* Singleton::m_pInstance = nullptr;
+Singleton* Singleton::m_pInstance = nullptr; //since m_pInstance as a static so we have to initialize outside the class
 int main () {
 	Singleton::create_instance();
 	Singleton::destroy();
